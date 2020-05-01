@@ -1,11 +1,16 @@
 package flashcards;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Card: ");
-        System.out.println("amend");
-        System.out.println("Definition: ");
-        System.out.println("alter");
+        Scanner scanner = new Scanner(System.in);
+
+        String term = scanner.nextLine();
+        String definition = scanner.nextLine();
+        String answer = scanner.nextLine();
+
+        System.out.println(definition.equals(answer) ? "rigt" : "wrong");
     }
 }
