@@ -11,6 +11,6 @@ public class Main {
         String definition = scanner.nextLine();
         String answer = scanner.nextLine();
 
-        System.out.println(definition.equals(answer) ? "rigt" : "wrong");
+        System.out.println(definition.equals(answer) ? "right" : "wrong");
     }
 }
