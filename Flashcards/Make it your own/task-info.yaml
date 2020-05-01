@@ -120,6 +120,26 @@ files:
         // just empty class, but not abstract so it can be run
     }
   learner_created: false
+- name: src/flashcards/Main.java
+  visible: true
+  text: |
+    package flashcards;
+
+    import java.util.Scanner;
+
+    public class Main {
+        public static void main(String[] args) {
+
+            Scanner scanner = new Scanner(System.in);
+
+            String term = scanner.nextLine();
+            String definition = scanner.nextLine();
+            String answer = scanner.nextLine();
+
+            System.out.println(definition.equals(answer) ? "right" : "wrong");
+        }
+    }
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/44/stages/234/implement
-status: Unchecked
+status: Solved
 record: -1
